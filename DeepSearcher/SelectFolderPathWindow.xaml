@@ -1,0 +1,28 @@
+﻿<Window x:Class="DeepSearcher.SelectFolderPathWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:commands="clr-namespace:DeepSearcher.Commands"
+        xmlns:viewModels="clr-namespace:DeepSearcher.ViewModels"
+        xmlns:deepSearcher="clr-namespace:DeepSearcher"
+        Height="120" Width="300" ResizeMode="NoResize" WindowStyle="ToolWindow" SizeToContent="WidthAndHeight" Closing="FolderPathDialog_OnClosing" WindowStartupLocation="CenterOwner">
+    <Window.Resources>
+        <ResourceDictionary>
+            <viewModels:SelectFolderPathViewModel x:Key="FolderPathViewModel" />
+            <commands:ChooseFolderCommand x:Key="ChooseFolderCommand" />
+        </ResourceDictionary>
+    </Window.Resources>
+    <StackPanel DataContext="{StaticResource FolderPathViewModel}">
+        <DockPanel Height="30">
+            <Button DockPanel.Dock="Right" Content="Choose Folder" Margin="4" Command="{StaticResource ChooseFolderCommand}" CommandParameter="{StaticResource FolderPathViewModel}"/>
+            <deepSearcher:SelectFolderTextBox DockPanel.Dock="Left" Width="200" Margin="4" ToolTip="The path to search in">
+                <deepSearcher:SelectFolderTextBox.Text>
+                    <Binding Path="FolderPath" UpdateSourceTrigger="PropertyChanged" >
+
+                    </Binding>
+                </deepSearcher:SelectFolderTextBox.Text>
+            </deepSearcher:SelectFolderTextBox>
+
+        </DockPanel>
+        <Button Content="Close" Width="80" Margin="5" Click="Button_Click"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepSearcher", "DeepSearcher\DeepSearcher.csproj", "{B44E3E9B-EB59-4940-B4BA-532AAA1CC893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepSearcher.Indexing", "DeepSearcher.Indexing\DeepSearcher.Indexing.csproj", "{442622ED-5D8C-4487-985F-5C3C4171CBFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepSearcher.Interfaces", "DeepSearcher.Interfaces\DeepSearcher.Interfaces.csproj", "{90DAAE16-6511-4B6C-AFDE-3C7334BB7E07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepSearcher.CustomControls", "DeepSearcher.CustomControls\DeepSearcher.CustomControls.csproj", "{F2388A9C-459F-4308-B01D-72CDD83439A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B44E3E9B-EB59-4940-B4BA-532AAA1CC893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B44E3E9B-EB59-4940-B4BA-532AAA1CC893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B44E3E9B-EB59-4940-B4BA-532AAA1CC893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B44E3E9B-EB59-4940-B4BA-532AAA1CC893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{442622ED-5D8C-4487-985F-5C3C4171CBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{442622ED-5D8C-4487-985F-5C3C4171CBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{442622ED-5D8C-4487-985F-5C3C4171CBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{442622ED-5D8C-4487-985F-5C3C4171CBFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90DAAE16-6511-4B6C-AFDE-3C7334BB7E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DAAE16-6511-4B6C-AFDE-3C7334BB7E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DAAE16-6511-4B6C-AFDE-3C7334BB7E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DAAE16-6511-4B6C-AFDE-3C7334BB7E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2388A9C-459F-4308-B01D-72CDD83439A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2388A9C-459F-4308-B01D-72CDD83439A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2388A9C-459F-4308-B01D-72CDD83439A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2388A9C-459F-4308-B01D-72CDD83439A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
